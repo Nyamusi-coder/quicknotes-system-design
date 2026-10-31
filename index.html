@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickNotes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>QuickNotes</h1>
+    </header>
+
+    <main>
+        <!-- Load Button and Status -->
+        <button id="load-btn">Load Notes</button>
+        <p id="status"></p>
+
+        <!-- Create Note Form -->
+        <form id="note-form">
+            <label for="title-input">Title (Required, max 100 chars):</label>
+            <input type="text" id="title-input" maxlength="100" required>
+            
+            <label for="body-input">Body (Optional):</label>
+            <textarea id="body-input" rows="4"></textarea>
+            
+            <button type="submit" id="submit-btn">Create Note</button>
+        </form>
+
+        <!-- Notes List -->
+        <ul id="notes-list"></ul>
+    </main>
+
+    <script src="api.js" defer></script>
+</body>
+</html>

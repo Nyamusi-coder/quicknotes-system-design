@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#note-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#note-form input, #note-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Status Message Styles */
+#status {
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.status-loading {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Notes List Styles */
+#notes-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#notes-list li {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.note-content {
+    flex-grow: 1;
+}
+
+.note-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.note-body {
+    color: #555;
+    white-space: pre-wrap;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    margin-left: 10px;
+    font-size: 14px;
+}
